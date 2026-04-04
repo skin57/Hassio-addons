@@ -31,7 +31,7 @@ COPY root/ /
 RUN apk add --no-cache nginx nginx-mod-stream openssl ca-certificates
 
 # install required python packages
-RUN pip3 install "Cython<3.0" wheel && pip3 install -r requirements.txt
+RUN pip3 install "Cython<3.0" wheel && pip3 install --no-build-isolation -r requirements.txt
 
 RUN chmod a+x /create_certs/* /create_certs/src/*
 RUN chmod a+x /etc/s6-overlay/s6-rc.d/bumper/* /etc/s6-overlay/s6-rc.d/nginx/* /etc/cont-init.d/*
