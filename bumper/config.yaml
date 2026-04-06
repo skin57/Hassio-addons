@@ -1,16 +1,12 @@
 name: "Bumper"
-version: "1.2.3.2"
+version: "1.2.3.3"
 slug: "bumper"
 apparmor: true
 description: "Local replacement server for Ecovacs robots."
 url: https://github.com/bittles/Hassio-addons/tree/master/bumper
 startup: services
 arch:
-  - armhf
-  - armv7
-  - aarch64
   - amd64
-  - i386
 init: false
 ports:
   443/tcp: 443
