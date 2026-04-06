@@ -1,5 +1,0 @@
-FROM ghcr.io/hassio-addons/debian-base:6.2.1
-
-COPY docker/build-gstreamer/install-dependencies /
-
-RUN ["/install-dependencies"]
