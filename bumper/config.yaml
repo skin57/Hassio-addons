@@ -1,5 +1,5 @@
 name: "Bumper"
-version: "1.2.3.3"
+version: "1.2.3.4"
 slug: "bumper"
 apparmor: true
 description: "Local replacement server for Ecovacs robots."
